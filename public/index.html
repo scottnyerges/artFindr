@@ -1,3 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>artFinder Test Page</title>
+    <style>
+      input {
+        display: block;
+        height: 36px;
+        width: 200px;
+        font-size: 24px;
+      }
+      textarea {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+    <h1>Hi Default Pre-Populated User (Joe Plumber)!</h1>
+    <h2>Enter a note about what you can provide to the community!</h2>
+      <input type="text" name="title" placeholder="Summary">
+      <textarea type="text" name="body" placeholder="Describe your services in detail here."></textarea>
+      <input type="submit">
+      Click Submit to see the JSON reponse to this POST (it's your whole profile)...note the "notes" item that is added
+      <br>
+      <br>
+      <a href="/notes">See your notes only! (in ugly JSON)</a>
+      <br>
+      <a href="/user">See your profile! (in ugly JSON)</a>
+      <br>
+      <a href="/populateduser">See your profile, populated with the notes json! (in ugly JSON)</a>
+    </form>
+  </body>
+</html>
+=======
  <!DOCTYPE html>
 <html>
   <head>
