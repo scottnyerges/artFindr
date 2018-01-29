@@ -73,8 +73,10 @@ app.get("/user", function(req, res) {
     });
 });
 
+
 // Route for saving a new Note to the db and associating it with a User
 app.post("/newUser", function(req, res) {
+
   // Create a new Note in the db
   db.User.create(      {
         userHandle: "submitteTestUser1",
@@ -82,6 +84,7 @@ app.post("/newUser", function(req, res) {
         userLastName: req.body.lastname, 
         userPassword: req.body.password1
       })
+
     .then(function(dbUser) {
       // If the User was updated successfully, send it back to the client
       res.json(dbUser);
