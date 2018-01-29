@@ -43,12 +43,16 @@
           </div> 
           <div>
             <!-- FORM GOES HERE -->
-            <form action="/action_page.php">
+            <form action="">
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <input type="submit" value="Submit">
+                <input type="text" id="lastName" name="lastName" placeholder="Last name">
+                
+                <label for="lname">Password</label>
+                <input type="text" id="password" name="password" placeholder="Password">
+                <!-- BUTTON TO SUBMIT USER LOGIN W. JAVASCRIPT  -->
+                <input type="button" onclick="myFunction()" value="Submit form">
               </form>
           </div>
         <!-- CLOSE COLUMN 1 of 4 -->
@@ -93,77 +97,79 @@
                     <label for="bio">Bio (140 characters max)</label>
                     <input type="text" id="bio" name="bio" placeholder="Bio">
                     
+                    <!-- THESE NEED TO BE CHECKBOXES, NOT RADIOS -->
                   
                   <h3>Primary medium</h3>
                  <!--  <div> -->
-                   <input type="radio" name="radio" id="painting" class="radio" checked/>
-                  <label for="radio1">Painting</label>
+                   <input type="checkbox" name="check" id="painting" class="check" checked/>
+                  <label for="painting">Painting</label>
                   <!-- </div>
                   <div>
- -->                  <input type="radio" name="radio" id="drawing" class="radio"/>
-                  <label for="radio2">Drawing/Illustration</label>
+ -->                  <input type="checkbox" name="check" id="drawing" class="check"/>
+                  <label for="drawing">Drawing/Illustration</label>
                  <!--  </div>
                   <div> --> 
-                  <input type="radio" name="radio" id="sculpture" class="radio"/>
-                  <label for="radio3">Sculpture</label>
+                  <input type="checkbox" name="check" id="sculpture" class="check"/>
+                  <label for="sculpture">Sculpture</label>
                   <!-- </div>
                   <div> --> 
-                  <input type="radio" name="radio" id="ceramics" class="radio"/>
-                  <label for="radio4">Ceramics</label>
+                  <input type="checkbox" name="check" id="ceramics" class="check"/>
+                  <label for="ceramics">Ceramics</label>
                   <!-- </div>
                   <div> -->
-                  <input type="radio" name="radio" id="installation" class="radio" checked/>
-                  <label for="radio1">Installation/Performance</label>
+                  <input type="checkbox" name="check" id="installation" class="check" checked/>
+                  <label for="installation">Installation/Performance</label>
                   <!-- </div>
                   <div> -->
-                  <input type="radio" name="radio" id="photo" class="radio"/>
-                  <label for="radio2">Photography</label>
+                  <input type="checkbox" name="check" id="photo" class="check"/>
+                  <label for="photography">Photography</label>
                   <!-- </div>
                   <div>  -->
-                  <input type="radio" name="radio" id="film" class="radio"/>
-                  <label for="radio3">Film/Video</label>
+                  <input type="checkbox" name="check" id="film" class="check"/>
+                  <label for="filmvideo">Film/Video</label>
                   <!-- </div>
                   <div> --> 
-                  <input type="radio" name="radio" id="metal" class="radio"/>
-                  <label for="radio4">Metalsmithing/Jewelry</label>
+                  <input type="checkbox" name="check" id="metal" class="check"/>
+                  <label for="metalsmithing">Metalsmithing/Jewelry</label>
                   <!-- </div>
                 </div>  -->
 
            
                   <h3>Other interests</h3>
 <!--                   <div>
- -->                  <input type="radio" name="radio" id="openings" class="radio" checked/>
-                  <label for="radio1">Gallery Openings</label>
+ -->                  <input type="checkbox" name="check" id="openings" class="check" checked/>
+                  <label for="gallery">Gallery Openings</label>
                  <!--  </div>
                   <div> -->
-                  <input type="radio" name="radio" id="artists" class="radio"/>
-                  <label for="radio2">Artist Talks/Open Studios</label>
+                  <input type="checkbox" name="check" id="artists" class="check"/>
+                  <label for="talks">Artist Talks/Open Studios</label>
                   <!-- </div>
                   <div> --> 
-                  <input type="radio" name="radio" id="networking" class="radio"/>
-                  <label for="radio3">Networking/Fundraising Events</label>
+                  <input type="checkbox" name="check" id="networking" class="check"/>
+                  <label for="networking">Networking/Fundraising Events</label>
                  <!--  </div>
                   <div>  -->
-                  <input type="radio" name="radio" id="jobs" class="radio"/>
-                  <label for="radio4">Jobs/Gigs</label>
+                  <input type="checkbox" name="check" id="jobs" class="check"/>
+                  <label for="jobs">Jobs/Gigs</label>
                   <!-- </div>
                   <div> -->
-                  <input type="radio" name="radio" id="space" class="radio" checked/>
-                  <label for="radio1">Space Available/Needed</label>
+                  <input type="checkbox" name="check" id="space" class="check" checked/>
+                  <label for="space">Space Available/Needed</label>
                   <!-- </div>
                   <div> -->
-                  <input type="radio" name="radio" id="writing" class="radio"/>
-                  <label for="radio2">Grant/Proposal Writing</label>
+                  <input type="checkbox" name="check" id="writing" class="check"/>
+                  <label for="writing">Grant/Proposal Writing</label>
                 <!--   </div>
                   <div> --> 
-                  <input type="radio" name="radio" id="barter" class="radio"/>
-                  <label for="radio3">Barter/Exchange of Services</label>
+                  <input type="checkbox" name="check" id="barter" class="check"/>
+                  <label for="barter">Barter/Exchange of Services</label>
                  <!--  </div>
                   <div> --> 
-                  <input type="radio" name="radio" id="events" class="radio"/>
-                  <label for="radio4">Event Volunteering</label>
+                  <input type="checkbox" name="check" id="events" class="check"/>
+                  <label for="event">Event Volunteering</label>
                  <!--  </div>
                 </div> --> 
+                  <!-- THIS NEEDS TO SEND THE USER BACK TO THE LOGIN PAGE -->
                   <input type="submit" value="Submit">
               </form>
               <!-- CLOSE THE COLUMN -->
