@@ -27,11 +27,15 @@ mongoose.Promise = Promise;
 useMongoClient: true;
 
 // creates new database 
-mongoose.connect("mongodb://localhost/populatedb");
+mongoose.connect("mongodb://localhost/userdb");
 
 // When the server starts, create and save a new User document to the db
 // The "unique" rule in the User model's schema will prevent duplicate users from being added to the server
-db.User.create({userHandle: "testcasehandle1", userPassword: "testcasepassword1", userFirstName: "Joe", userLastName: "Plumber"})
+db.User.create(
+  {userHandle: "testcasehandle1", userPassword: "testcasepassword1", userFirstName: "Joe", userLastName: "Plumber", userProfilePicURL: "https://randomuser.me/api/portraits/men/57.jpg", userGender: "Male", userEmailH: "wheee@me.com", userNotes: "I am a user note", userInterests: "I am a user interest"}, 
+  {userHandle: "testcasehandle2", userPassword: "testcasepassword2", userFirstName: "Jesse", userLastName: "Mechanic", userProfilePicURL: "https://randomuser.me/api/portraits/men/52.jpg", userGender: "Male", userEmailH: "whooo@me.com", userNotes: "I am a user note", userInterests: "I am a user interest"}, 
+  {userHandle: "testcasehandle3", userPassword: "testcasepassword3", userFirstName: "John", userLastName: "Formery-Jan", userProfilePicURL: "https://randomuser.me/api/portraits/women/30.jpg", userGender: "Transgender", userEmailH: "whooooooa@me.com", userNotes: "I am a user note", userInterests: "I am a user interest"}, 
+  {userHandle: "testcasehandle4", userPassword: "testcasepassword4", userFirstName: "Jamie", userLastName: "Awesomesauce", userProfilePicURL: "https://randomuser.me/api/portraits/women/19.jpg", userGender: "Female", userEmailH: "wawawawa@me.com", userNotes: "I am a user note", userInterests: "I am a user interest"})
   .then(function(dbUser) {
     console.log("*******************\n***The following 'user' was preloaded whem the server fired up:***\n"+dbUser+"\n*******************");
   })
