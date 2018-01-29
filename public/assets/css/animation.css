@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+#square {
+	width: 200px;
+	height: 200px;
+	background: #FF6B4C;
+	position: absolute;
+}
+
+#squareA {
+	width: 225px;
+	height: 225px;
+	background: #FF2C00;
+	position: absolute;
+}
+
+#squareB {
+	width: 250px;
+	height: 250px;
+	background: #B21E00;
+	position: absolute;
+}
+
+/*.section {
+	text-align: center;
+}*/
+
+.wrapper {
+/*	border-width: 0.5px;
+	border-style: solid;
+	border-color: gray;*/
+	margin: auto;
+	margin-top: 50px;
+	padding: 10px;
+/*	width: 175px;
+	height: 225px;*/
+}
+
+
+.containerAnimation {
+	width: 250px;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 0px;
+	padding: 5px;
+	font-family: 'Assistant', sans-serif;
+	font-size: 48px;
+}
+
+
+
