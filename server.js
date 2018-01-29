@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Require all models
 var db = require("./models");
@@ -24,10 +24,7 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 
-// drops database if it alredy exists
-mongoose.connect('mongodb://localhost/populatedb',function(){
-  mongoose.connection.db.dropDatabase();
-});
+useMongoClient: true;
 
 // creates new database 
 mongoose.connect("mongodb://localhost/populatedb");
