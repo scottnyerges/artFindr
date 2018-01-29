@@ -64,126 +64,114 @@
             <div class="section group">
               <div class="row"> 
                 <div class="col span_2_of_4">
-                  <form action="/action_page.php">
-                    <label for="fname">First Name*</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                    <label for="lname">Last Name*</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <label for="lname">Password*</label>
-                    <input type="text" id="fname" name="password" placeholder="Password">
-                    <label for="lname">Confirm password*</label>
-                    <input type="text" id="lname" name="password" placeholder="Confirm password">
-                    <label for="lname">Email*</label>
-                    <input type="text" id="lname" name="email" placeholder="yourname@dot.com">
+                  <form action="/newUser" method="post">
+
+                   
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your first name..">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+                    <label for="password">Password*</label>
+                    <input type="text" id="password" name="password" placeholder="Password">
+                    <label for="confirmPassword">Confirm password*</label>
+                    <input type="text" id="password" name="password" placeholder="Confirm password">
+                    <label for="email">Email*</label>
+                    <input type="text" id="email" name="email" placeholder="yourname@dot.com">
                     <label for="lname">Website</label>
-                    <input type="text" id="lname" name="website" placeholder="(URL)">
-                    
-                </div> 
-                <div class="col span_2_of_4">
-                    <label for="lname">Instagram</label>
-                    <input type="text" id="lname" name="password" placeholder="Instagram">
-                    <label for="lname">Twitter</label>
-                    <input type="text" id="lname" name="password" placeholder="Twitter">
-                    <label for="lname">Dribble</label>
-                    <input type="text" id="fname" name="email" placeholder="Dribble">
-                    <label for="lname">Etsy</label>
-                    <input type="text" id="fname" name="email" placeholder="Etsy">
+                    <input type="text" id="website" name="website" placeholder="(URL)">
+              
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram" placeholder="Instagram">
+                    <label for="twitter">Twitter</label>
+                    <input type="text" id="twitter" name="twitter" placeholder="Twitter">
+                    <label for="dribble">Dribble</label>
+                    <input type="text" id="dribble" name="dribble" placeholder="Dribble">
+                    <label for="etsy">Etsy</label>
+                    <input type="text" id="etsy" name="etsy" placeholder="Etsy">
                     <label for="lname">Upload an image</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Upload an image (URL)">
-                    <label for="lname">Bio (140 characters max)</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Bio">
-                  </form>
-                </div> 
-              </div> 
-            </div>
-            <!-- SECTION CLOSED -->
-            
-            <!-- SECTION WITHIN COLUMN -->
-            <div class="section group">
-              <div class="row"> 
-                <div class="col span_2_of_4">
+                    <input type="text" id="image" name="image" placeholder="Upload an image (URL)">
+                    <label for="bio">Bio (140 characters max)</label>
+                    <input type="text" id="bio" name="bio" placeholder="Bio">
+                    
+                  
                   <h3>Primary medium</h3>
-                  <div>
-                   <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                 <!--  <div> -->
+                   <input type="radio" name="radio" id="painting" class="radio" checked/>
                   <label for="radio1">Painting</label>
-                  </div>
+                  <!-- </div>
                   <div>
-                  <input type="radio" name="radio" id="radio2" class="radio"/>
+ -->                  <input type="radio" name="radio" id="drawing" class="radio"/>
                   <label for="radio2">Drawing/Illustration</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio3" class="radio"/>
+                 <!--  </div>
+                  <div> --> 
+                  <input type="radio" name="radio" id="sculpture" class="radio"/>
                   <label for="radio3">Sculpture</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio4" class="radio"/>
+                  <!-- </div>
+                  <div> --> 
+                  <input type="radio" name="radio" id="ceramics" class="radio"/>
                   <label for="radio4">Ceramics</label>
-                  </div>
-                  <div>
-                  <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                  <!-- </div>
+                  <div> -->
+                  <input type="radio" name="radio" id="installation" class="radio" checked/>
                   <label for="radio1">Installation/Performance</label>
-                  </div>
-                  <div>
-                  <input type="radio" name="radio" id="radio2" class="radio"/>
+                  <!-- </div>
+                  <div> -->
+                  <input type="radio" name="radio" id="photo" class="radio"/>
                   <label for="radio2">Photography</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio3" class="radio"/>
+                  <!-- </div>
+                  <div>  -->
+                  <input type="radio" name="radio" id="film" class="radio"/>
                   <label for="radio3">Film/Video</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio4" class="radio"/>
+                  <!-- </div>
+                  <div> --> 
+                  <input type="radio" name="radio" id="metal" class="radio"/>
                   <label for="radio4">Metalsmithing/Jewelry</label>
-                  </div>
-                </div> 
+                  <!-- </div>
+                </div>  -->
 
-                <div class="col span_2_of_4">
+           
                   <h3>Other interests</h3>
-                <div>
-                  <div>
-                  <input type="radio" name="radio" id="radio1" class="radio" checked/>
+<!--                   <div>
+ -->                  <input type="radio" name="radio" id="openings" class="radio" checked/>
                   <label for="radio1">Gallery Openings</label>
-                  </div>
-                  <div>
-                  <input type="radio" name="radio" id="radio2" class="radio"/>
+                 <!--  </div>
+                  <div> -->
+                  <input type="radio" name="radio" id="artists" class="radio"/>
                   <label for="radio2">Artist Talks/Open Studios</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio3" class="radio"/>
+                  <!-- </div>
+                  <div> --> 
+                  <input type="radio" name="radio" id="networking" class="radio"/>
                   <label for="radio3">Networking/Fundraising Events</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio4" class="radio"/>
+                 <!--  </div>
+                  <div>  -->
+                  <input type="radio" name="radio" id="jobs" class="radio"/>
                   <label for="radio4">Jobs/Gigs</label>
-                  </div>
-                  <div>
-                  <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                  <!-- </div>
+                  <div> -->
+                  <input type="radio" name="radio" id="space" class="radio" checked/>
                   <label for="radio1">Space Available/Needed</label>
-                  </div>
-                  <div>
-                  <input type="radio" name="radio" id="radio2" class="radio"/>
+                  <!-- </div>
+                  <div> -->
+                  <input type="radio" name="radio" id="writing" class="radio"/>
                   <label for="radio2">Grant/Proposal Writing</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio3" class="radio"/>
+                <!--   </div>
+                  <div> --> 
+                  <input type="radio" name="radio" id="barter" class="radio"/>
                   <label for="radio3">Barter/Exchange of Services</label>
-                  </div>
-                  <div> 
-                  <input type="radio" name="radio" id="radio4" class="radio"/>
+                 <!--  </div>
+                  <div> --> 
+                  <input type="radio" name="radio" id="events" class="radio"/>
                   <label for="radio4">Event Volunteering</label>
-                  </div>
-                </div> 
+                 <!--  </div>
+                </div> --> 
+                  <input type="submit" value="Submit">
+              </form>
+              <!-- CLOSE THE COLUMN -->
               </div> 
-            <!-- SECTION CLOSED -->
+            <!-- CLOSE THE ROW -->
             </div>
-          <!-- need to figure out how to tie form inputs to submit button -->
-           <input type="submit" value="Submit">
-
-        <!-- CLOSE COLUMN 3 of 4 -->
-        </div> 
-        
-        <!-- END FIRST ROW -->
-        </div>
+          <!-- CLOSE THE SECTION GROUP -->
+          </div>
 
       <!-- FOOT SECTION -->
           <div class="section group">
