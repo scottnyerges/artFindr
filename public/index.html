@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+    
+    <title>artFinder Test Page</title>
+    <style>
+      input {
+        display: block;
+        height: 36px;
+        width: 200px;
+        font-size: 24px;
+      }
+      textarea {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+    <h1>Hi Default Pre-Populated User (Joe Plumber)!</h1>
+    <h2>Enter a note about what you can provide to the community!</h2>
+      <input type="text" name="title" placeholder="Summary">
+      <textarea type="text" name="body" placeholder="Describe your services in detail here."></textarea>
+      <input type="submit">
+      Click Submit to see the JSON reponse to this POST (it's your whole profile)...note the "notes" item that is added
+      <br>
+      <br>
+      <a href="/notes">See your notes only! (in ugly JSON)</a>
+      <br>
+      <a href="/user">See your profile! (in ugly JSON)</a>
+      <br>
+      <a href="/populateduser">See your profile, populated with the notes json! (in ugly JSON)</a>
+    </form>
+    <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES HEY HEY HEY!</a>
+  </body>
+</html>
+=======
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- WEB TITLE -->
+    <title>artfinder austin</title>
+  <!-- GOOGLE FONTS -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="./assets/css/grid.css" type="text/css">
+	<!-- MORE??? -->
+  </head>
+  <body>
+  	<!-- MAIN CONTAINER -->
+	<div class="container">
+		<!-- MAIN SECTION -->
+		<div class="section group">
+			<div class="row">
+				<div class="col span_4_of_4">
+					<div id="circle"><a href="portal.html">Member Portal</a></div>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col span_4_of_4" id="centerStyle">
+				<a href="https://placeholder.com"><img src="http://via.placeholder.com/350x350" id="imgStyle"></a>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col span_4_of_4">
+				<div id="triangleDown"></div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="section group">	
+			<div class="row">
+				<div class="col span_3_of_4">
+					<!-- SOURCE: https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
+					 <div id="slideshow">
+					   <div>
+					     <img src="http://via.placeholder.com/800x600" id="slideStyle">
+					   </div>
+					   <div>
+					     <img src="http://via.placeholder.com/800x600" id="slideStyle">
+					   </div>
+					   <div>
+					     <img src="http://via.placeholder.com/800x600" id="slideStyle">
+					   </div>
+					</div>
+				</div>	
+
+				<div class="col span_1_of_4">
+				<div id="eventText">
+					<h1>What's On</h1>
+					<h2>Friday</h2>
+					<h3>An event</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					<h3>An event</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					<h2>Saturday</h2>
+					<h3>An event</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					<h3>An event</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					<h2>Sunday</h2>
+					<h3>An event</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					<h3>An event</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+				</div>
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="col span_4_of_4">
+				<div id="triangleDown"></div>
+				</div>
+			</div>	
+
+		</div>	
+
+		<div class="section group">
+			<div class="row">
+				<div class="col span_1_of_4">
+				<img src="http://via.placeholder.com/250x250" id="slideStyle">
+				</div>
+				<div class="col span_1_of_4">
+					<div id="profileStyle">
+					<h2>profile hed</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					</div>
+				</div>
+				<div class="col span_1_of_4">
+				<img src="http://via.placeholder.com/250x250" id="slideStyle">
+				</div>
+				<div class="col span_1_of_4">
+					<div id="profileStyle">
+					<h2>profile hed</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nisl consectetur, aliquam justo vel, convallis sapien. Duis id mauris volutpat, maximus nunc nec, gravida arcu.</p>
+					</div>
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col span_4_of_4">
+					<div id="circle2"><a href="portal.html">Member Portal</a></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="section group">
+			<div class="row">
+				<div class="col span_4_of_4">
+					footer
+				</div>	
+			</div>
+		</div>	
+		
+	<!-- CLOSE THE CONTAINER -->
+	</div>
+	<!-- CUSTOM JS FILE LINK -->
+	<script src="./assets/js/animation.js"></script>
+	<script src="./assets/js/index.js"></script>
+
+  </body>
+</html>
