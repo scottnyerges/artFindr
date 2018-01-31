@@ -1,0 +1,62 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Gallery Placeholder</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		body 		{ padding-top:80px; word-wrap:break-word; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="page-header text-center">
+		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
+		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
+		<a href="/profile" class="btn btn-default btn-sm">Profile</a>
+
+	</div>
+
+	<div class="row">
+
+	<!-- USER INFORMATION -->
+		<div class="col-sm-3">
+			<div class="well">
+				<h3><span class="fa fa-user"></span> Your Profile</h3>
+
+					<p>
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<br>
+						<strong>Name: </strong>: <%= user.profile.firstName %> <%= user.profile.lastName %><br>
+						<strong>Username: </strong>: <%= user.profile.userName %><br>
+
+					</p>
+
+			</div>
+		</div>
+	<!-- Gallery INFORMATION -->
+		<div class="col-sm-9">
+			<div class="well">
+				<h3><span class="fa fa-user"></span> GALLERY PLACEHOLDER</h3>
+
+					<p>
+						<strong>GALLERY HEADSHOTS GO HERE</strong>
+						<br>
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<br>
+					</p>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>

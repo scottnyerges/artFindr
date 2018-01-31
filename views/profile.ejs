@@ -1,0 +1,69 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		body 		{ padding-top:80px; word-wrap:break-word; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="page-header text-center">
+		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
+		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
+		<a href="/gallery" class="btn btn-default btn-sm">Gallery</a>
+	</div>
+
+	<div class="row">
+		<!-- USER INFORMATION -->
+		<div class="col">
+			<div class="well">
+				<h3><span class="fa fa-user"></span> Your Account Info</h3>
+
+					<p>
+						<strong>id</strong>: <%= user._id %><br>
+						<strong>email</strong>: <%= user.local.email %><br>
+						<strong>password hash</strong>: <%= user.local.password %>
+					</p>
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+
+		<!-- PROFILE INFORMATION -->
+		<div class="col">
+			<div class="well">
+				<h3><span class="fa"></span>User Profile</h3>
+				<h5 style="color:red">Make changes below and click "Update Profile" to modify your info.</h5>
+					<form action="/updateProfile" method="post">
+					<p>
+						<strong>User Name</strong>: <input type="text" style="color: #C0C0C0;" onfocus="this.value=''; this.style.color='#000000'" name="userName" value=<%=user.profile.userName%>>
+						<br>
+
+						<strong>First Name</strong>: <input type="text" style="color: #C0C0C0;" onfocus="this.value=''; this.style.color='#000000'" name="firstName" value=<%=user.profile.firstName%>>
+						<br>
+						
+						<strong>Last Name</strong>: <input type="text" style="color: #C0C0C0;" onfocus="this.value=''; this.style.color='#000000'" name="lastName" value=<%=user.profile.lastName%>>
+						<br>
+						
+						<strong>Profile Pic URL</strong>: <input type="text" style="color: #C0C0C0;" onfocus="this.value=''; this.style.color='#000000'" name="urlProfilePic" value=<%=user.profile.urlProfilePic%>>
+						<br>
+						<img style="width:80px;height:80px;" src=<%=user.profile.urlProfilePic%> alt="Your Profile Pic">
+						<br>
+						
+					</p>
+					<button type="submit">Update Profile</button>
+					</form>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>
